@@ -14,6 +14,9 @@
 		DDA4F28C1F6E0A1B002805C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA4F28B1F6E0A1B002805C9 /* Assets.xcassets */; };
 		DDA4F28F1F6E0A1B002805C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA4F28D1F6E0A1B002805C9 /* LaunchScreen.storyboard */; };
 		DDA4F2921F6E0A1B002805C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4F2911F6E0A1B002805C9 /* main.m */; };
+		DDE113FC1F6E312700EE56AE /* YYTest3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE113FB1F6E312700EE56AE /* YYTest3VC.m */; };
+		DDE114001F6E361500EE56AE /* YYTest4VC.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE113FE1F6E361500EE56AE /* YYTest4VC.m */; };
+		DDE114011F6E361500EE56AE /* YYTest4VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDE113FF1F6E361500EE56AE /* YYTest4VC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		DDA4F28E1F6E0A1B002805C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDA4F2901F6E0A1B002805C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDA4F2911F6E0A1B002805C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDE113FA1F6E312700EE56AE /* YYTest3VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTest3VC.h; sourceTree = "<group>"; };
+		DDE113FB1F6E312700EE56AE /* YYTest3VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTest3VC.m; sourceTree = "<group>"; };
+		DDE113FD1F6E361500EE56AE /* YYTest4VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTest4VC.h; sourceTree = "<group>"; };
+		DDE113FE1F6E361500EE56AE /* YYTest4VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTest4VC.m; sourceTree = "<group>"; };
+		DDE113FF1F6E361500EE56AE /* YYTest4VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYTest4VC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,11 @@
 				DD4E00D51F6E2A61001D9E96 /* YYTest1VC.m */,
 				DD4E00D71F6E2A74001D9E96 /* YYTest2VC.h */,
 				DD4E00D81F6E2A74001D9E96 /* YYTest2VC.m */,
+				DDE113FA1F6E312700EE56AE /* YYTest3VC.h */,
+				DDE113FB1F6E312700EE56AE /* YYTest3VC.m */,
+				DDE113FD1F6E361500EE56AE /* YYTest4VC.h */,
+				DDE113FE1F6E361500EE56AE /* YYTest4VC.m */,
+				DDE113FF1F6E361500EE56AE /* YYTest4VC.xib */,
 				DDA4F2881F6E0A1B002805C9 /* Main.storyboard */,
 				DDA4F28B1F6E0A1B002805C9 /* Assets.xcassets */,
 				DDA4F28D1F6E0A1B002805C9 /* LaunchScreen.storyboard */,
@@ -135,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA4F28F1F6E0A1B002805C9 /* LaunchScreen.storyboard in Resources */,
+				DDE114011F6E361500EE56AE /* YYTest4VC.xib in Resources */,
 				DDA4F28C1F6E0A1B002805C9 /* Assets.xcassets in Resources */,
 				DDA4F28A1F6E0A1B002805C9 /* Main.storyboard in Resources */,
 			);
@@ -148,9 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA4F2921F6E0A1B002805C9 /* main.m in Sources */,
+				DDE113FC1F6E312700EE56AE /* YYTest3VC.m in Sources */,
 				DDA4F2841F6E0A1B002805C9 /* AppDelegate.m in Sources */,
 				DD4E00D61F6E2A61001D9E96 /* YYTest1VC.m in Sources */,
 				DD4E00D91F6E2A74001D9E96 /* YYTest2VC.m in Sources */,
+				DDE114001F6E361500EE56AE /* YYTest4VC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

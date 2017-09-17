@@ -9,10 +9,13 @@
 #import "YYTest1VC.h"
 
 static NSString *const kYYTest1TableViewReuseIdentifier = @"kYYTest1TableViewReuseIdentifier";
+static NSString *const kText = @"text";
+static NSString *const kClass = @"class";
 
 @interface YYTest1VC () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
+@property (nonatomic, copy) NSArray *data;
 
 @end
 
@@ -22,6 +25,10 @@ static NSString *const kYYTest1TableViewReuseIdentifier = @"kYYTest1TableViewReu
 
     [super viewDidLoad];
 
+    self.data = [NSArray arrayWithObjects:
+  @{kText : @"代码布局", kClass : @"YYTest3VC"},
+  @{kText : @"Xib布局", kClass : @"YYTest4VC"}, nil];
+    
     [self setupTableView];
 }
 
@@ -44,15 +51,26 @@ static NSString *const kYYTest1TableViewReuseIdentifier = @"kYYTest1TableViewReu
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 4;
+    return self.data.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    NSDictionary *dic = [self.data objectAtIndex:indexPath.row];
+
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kYYTest1TableViewReuseIdentifier];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", @(indexPath.row)];
+    cell.textLabel.text = dic[kText];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSDictionary *dic = [self.data objectAtIndex:indexPath.row];
+    
+    UIViewController *vc = [NSClassFromString(dic[kClass]) new];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
